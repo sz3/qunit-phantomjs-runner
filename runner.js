@@ -96,7 +96,7 @@
                         response += ', ';
                     }
 
-                    response += 'expected: ' + details.expected + ', but was: ' + details.actual;
+                    response += 'expected: ' + JSON.stringify(details.expected) + ', but was: ' + JSON.stringify(details.actual);
                 }
 
                 if (details.source) {
